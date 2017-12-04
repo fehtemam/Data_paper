@@ -83,7 +83,48 @@ Some of the famous online repositories for publication:
 
 ### Funding options
 
-UMD funds 50% of the cost for open access publishing (https://www.lib.umd.edu/oa/openaccessfund). I don't know if a similar thing is available at CSU or not.
+UMD funds 50% of the cost for open access publishing (https://www.lib.umd.edu/oa/openaccessfund). I don't know if a similar thing is available at CSU or not. Most universities these days have funds to support open access publishing. It could be through their libraries or a separate office. It doesn't hurt to ask if CSU has this.
+
+## Statement of significance
+
+An important part of any publication is to show its contribution to what is already available. Without a significant contribution there is no publication. The publication of this dataset has three major and six minor (arguably) contributions:
+
+Major:
+
+* Availability of EMG data
+* Availability of accelerations
+* Availability of processed data
+
+Minor:
+
+* Providing the data in the format readable by OpenSim
+* Providing the 2D joint moments
+* The data provides responses to two different amplitudes of perturbation.
+* The data provides responses to two different types of mechanical perturbations (AP vs. ML).
+* It provides data for more subjects than previous datasets.
+* It provides more data per subject per condition compared to any other dataset (we have 16 minutes of walking for each amplitude of perturbation while PeerJ data had 8 minutes).
+
+
+## Data organization
+
+### Raw data
+
+It is extremely important to publish the raw data. Any processed data has followed a certain method of processing that can make future applications limited or impossible due to the fact that different research questions require different methods of processing. So researchers must have access to the raw data. However, raw data does not necessarily mean unstructured data. Even the raw data has to be structured in a way that makes it easy for the user to understand and access different types of data within the dataset. So I think the following raw data have to be written in separate files and labeled appropriately:
+
+* Kinematics
+* GRFs
+* EMGs
+* Accelerations
+* Treadmill files (speeds and accelerations)
+* Designed perturbations
+
+In addition to this I suggest an organization that separates normal walking and antero-posterior and medio-lateral perturbations. Furthermore, the data can be uploaded in two sets: a set called 21 subjects and a set called 15 subjects. While the 15 subjects were the same as the ones in 21 subjects set, these 15 are the ones for which EMGs and accelerations are available. This separation makes it easier for people with certain research questions to access the data. 
+
+### Processed data
+
+
+
+
 
 
 
