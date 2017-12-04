@@ -4,7 +4,7 @@ Data paper
 ### F. Ehtemam<sup>1+</sup>, H. Wang<sup>2+</sup> and A. van den Bogert<sup>2</sup>
 
 <sup>1</sup> University of Maryland & <sup>2</sup> Cleveland State University
-<sup>+</sup> F. Ehtemam and H. Wang have contributed equaly to this work.
+<sup>+</sup> F. Ehtemam and H. Wang have contributed equally to this work.
 Copyright © 2017 Cleveland State University
 
 ------------------------------------------------------------------------
@@ -87,7 +87,7 @@ Minor:
 Data organization
 -----------------
 
-### Raw data
+### Raw data <a name="Raw data"></a>
 
 It is extremely important to publish the raw data. Any processed data has followed a certain method of processing that can make future applications limited or impossible due to the fact that different research questions require different methods of processing. So researchers must have access to the raw data. However, raw data does not necessarily mean unstructured data. Even the raw data has to be structured in a way that makes it easy for the user to understand and access different types of data within the dataset. So I think the following raw data have to be written in separate files and labeled appropriately:
 
@@ -101,3 +101,29 @@ It is extremely important to publish the raw data. Any processed data has follow
 In addition to this I suggest an organization that separates normal walking and antero-posterior and medio-lateral perturbations. Furthermore, the data can be uploaded in two sets: a set called 21 subjects and a set called 15 subjects. While the 15 subjects were the same as the ones in 21 subjects set, these 15 are the ones for which EMGs and accelerations are available. This separation makes it easier for people with certain research questions to access the data.
 
 ### Processed data
+
+As important as publishing the raw data is, so is providing some sort of processed data. Biomechanics is an interdisciplinary field with people from very different backgrounds. Not everyone is tech-savvy enough to program scripts that allows them to analyze the raw data. What type of processed data one publishes depends on the field of study.
+It is common for studies in biomechanics to look at time normalized gait data. In addition to research questions that use this type of data in their investigations, this can be a highly useful educational resource. I was always disappointed by the lack of a simple dataset from couple of subjects that I could use to practice the knowledge I got from biomechanics courses through exploring different analysis methods using the data. We are going to change this by publishing the following time normalized data:
+
+-   Marker data
+-   Joint angles
+-   GRFs
+-   EMG
+-   Accelerations
+-   2D joint moments (sagittal plane)
+
+We will also include the graphs showing averages of processed data across all cycles to make it easy for people to compare it to what they already know from literature. In addition, we will provide the scripts we used to process the data. This includes a reference to Jason's GaitAnalysisToolkit we used for gap filling kinematics and the codes from Sandy and Huawei on inertial compensation.
+
+Agenda
+------
+
+Here is a list of steps (some of them already done) in order to prepare the raw and processed datasets before the manuscript is written:
+
+-   Structure the raw data according to the suggestion from above (see [Raw data](#Raw%20data))
+-   Fill all the gaps in kinematics using Jason's package (done in the spring)
+-   Do the belt speed compensation and pitch sway compensation on GRFs (done by Huawei)
+-   Calculate 2D joint moments using leg2d code. (done by Huawei)
+-   Have all steps of processing replicated at Maryland and Cleveland to make sure we get the same processed data. (in progress)
+-   Time normalize the data and write it to appropriate formats (both CSV and OpenSim formats)
+-   Prepare graphs of averaged values across all cycles
+-   Write a codebook that explains the data structure and the file formats and has to be uploaded with the dataset. (Has been done but the current version has to be expanded with some more details)
