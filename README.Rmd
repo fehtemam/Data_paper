@@ -27,10 +27,12 @@ knitr::opts_chunk$set(echo = TRUE)
 setwd("~/Documents/0PhD/0Cleveland/Processing/Data_paper/")
 ```
 
-### F. Ehtemam^1+^, H. Wang^2+^ and A. van den Bogert^2^ 
+### F. Ehtemam^1+^, H. Wang^2+^ and A. van den Bogert^2^  
 ^1^ University of Maryland & ^2^ Cleveland State University  
+
 ^+^ F. Ehtemam and H. Wang have contributed equally to this work.  
-Copyright &copy; 2017 Cleveland State University  
+
+&ensp; Copyright &copy; 2017 Cleveland State University  
 
 ***
 

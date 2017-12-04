@@ -4,8 +4,10 @@ Data paper
 ### F. Ehtemam<sup>1+</sup>, H. Wang<sup>2+</sup> and A. van den Bogert<sup>2</sup>
 
 <sup>1</sup> University of Maryland & <sup>2</sup> Cleveland State University
+
 <sup>+</sup> F. Ehtemam and H. Wang have contributed equally to this work.
-Copyright © 2017 Cleveland State University
+
+  Copyright © 2017 Cleveland State University
 
 ------------------------------------------------------------------------
 
