@@ -11,6 +11,8 @@ Data paper
 
 ------------------------------------------------------------------------
 
+This page addresses some of the most important points related to the publication of the data paper.
+
 The most important question before discussing anything is that if publishing a data paper will prevent us from publishing future analysis based on the data or not. This page lists publishers that do not have any problem with the data being published earlier:
 <https://f1000research.com/data-policies>
 It is quite a large list so I think we can have the dataset published.
