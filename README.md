@@ -116,6 +116,22 @@ It is common for studies in biomechanics to look at time normalized gait data. I
 
 We will also include the graphs showing averages of processed data across all cycles to make it easy for people to compare it to what they already know from literature. In addition, we will provide the scripts we used to process the data. This includes a reference to Jason's GaitAnalysisToolkit we used for gap filling kinematics and the codes from Sandy and Huawei on inertial compensation.
 
+Addressing heterogeneities in the data structure
+------------------------------------------------
+
+Rich datasets are rarely homogeneous in their structures. Changes in the experiment design, technical issues during data collection or other factors can result in heterogeneity. As an example, the PeerJ dataset has some subjects for which GRFs were collected using wooden supports under the treadmill that turned out to greatly affect the quality of the GRF data and made GRFs practically useless for those few subjects. Other examples from the PeerJ dataset and other datasets exist. Heterogeneous structure is not necessarily a limitation or a flaw of the dataset. For instance, in our data collection we forgot to put the supports under the treadmill for subject 23. While this may look like a flaw at the first glance, it resulted in us having a subject for which the unloaded trial is collected for every trial (I can explain later why having this could be beneficial). But despite some applications that may benefit from heterogeneities, a heterogeneous structure is mostly inconvenient during processing. Because of this, heterogeneity in structure has to be addressed in any data publication. Here are the items that contribute to a heterogeneous structure in our dataset with 24 subjects:
+
+-   Data collection could not be completed with reasonable number of trials finished for subjects 5 and 9. We have so far excluded them from analysis.
+-   EMG and acceleration data were collected for the last 15 subjects only.
+-   For subjects 13 and 14, the medio-lateral (ML) perturbation trials were not collected due to the time constraint.
+-   For subjects 2 and 3, the treadmill markers were not used. This means GRFs cannot be compensated.
+-   For subject 4, the last ML trial (speed of 1.6 m/s) was not collected because of treadmill noise.
+-   For subject 24, the last two unloaded trials of ML perturbation were not collected because of treadmill noise.
+-   For subject 23, treadmill supports were not used during AP trials and as a result unloaded data was collected for all 13 trials.
+-   For subject 12, the measurement of treadmill speed for trial 8 does not exist.
+
+I think the first issue need not be discussed in the manuscript. We can present only 21 subjects. The second and third issues I think should be clearly mentioned in the manuscript. The rest of the issues I think could be mentioned in the codebook accompanying the uploaded dataset (I think they are all already documented in metadata files). We can discuss if they have to be highlighted in the manuscript or not.
+
 Agenda
 ------
 
@@ -128,4 +144,4 @@ Here is a list of steps (some of them already done) in order to prepare the raw 
 -   Have all steps of processing replicated at Maryland and Cleveland to make sure we get the same processed data. (in progress)
 -   Time normalize the data and write it to appropriate formats (both CSV and OpenSim formats)
 -   Prepare graphs of averaged values across all cycles
--   Write a codebook that explains the data structure and the file formats and has to be uploaded with the dataset. (Has been done but the current version has to be expanded with some more details)
+-   Write a codebook that explains the data structure and the file formats. This codebook has to be uploaded with the data and metadata files. (Has been done but the current version has to be expanded with some more details)
